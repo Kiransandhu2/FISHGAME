@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floppy Fish Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+
+
+    <!-- Game over container -->
+    <div id="game-over-container" style="display:none; position:absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center;">
+        <div style="text-align:center; color:white;">
+            <div id="game-over" class="galindo-regular" style="font-size: 48px; margin-bottom: 20px;">Game Over</div>
+            <div id="leaderboard" class="galindo-regular" style="font-size: 24px; margin-bottom: 20px;">
+                <h2>Leaderboard</h2>
+                <ol id="leaderboard-list"></ol>
+            </div>
+            <button id="restart-button" class="galindo-regular" style="font-size: 24px; padding: 10px 20px; background-color: darkblue; color: white; border: none; cursor: pointer;">
+                Restart
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<img id="start-screen-image" src="https://assets.codepen.io/12192911/floppy_fish-removebg-preview.png" alt="Start Screen Image" style="position:absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
+<!-- Add the start button with a lower position -->
+<button id="start-button" class="galindo-regular" style="position:absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; padding: 10px 20px; background-color: green; color: white; border: none; cursor: pointer;">
+    Start
+</button>
