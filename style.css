@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    background-image: url('https://assets.codepen.io/12192911/DALL%C2%B7E+2024-10-23+22.54.45+-+A+seamless+underwater-themed+background+for+a+2D+endless+runner+game+with+muted%2C+duller+colors+to+suit+its+role+as+a+background.+The+scene+features+a+.png');
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+body, button, h2, #game-over, #leaderboard, #leaderboard-list, #restart-button, #start-button {
+    font-family: "Galindo", sans-serif;
+}
+
+#game-over-container {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-over {
+    font-size: 48px;
+    color: white;
+}
+
+#restart-button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#leaderboard {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#leaderboard-list li {
+    font-size: 20px;
+    margin: 5px 0;
+}
